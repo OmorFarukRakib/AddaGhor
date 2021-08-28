@@ -14,7 +14,9 @@ const Chats = () => {
 
   const handleLogout = async () => {
     await auth.signOut();
-    history.push("./");
+    history.push("/");
+    window.location.reload();
+
   };
 
   const getFile = async (url) => {

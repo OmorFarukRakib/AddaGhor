@@ -3,11 +3,13 @@ import { GoogleOutlined, FacebookOutlined } from "@ant-design/icons";
 import "firebase/app";
 import { auth } from "../firebase";
 import firebase from "firebase/app";
+import WelcomeMessage from "./ParticleBackground/WelcomeMessage";
 
 const Login = () => {
   return (
     <>
-      <div id="login-page">
+      {/* <div id="login-pageeee"> */}
+          <WelcomeMessage/>
         <div id="login-card">
           <h2>Welcome to AddaGhor</h2>
           <div
@@ -30,7 +32,7 @@ const Login = () => {
             <FacebookOutlined /> Sign in With Facebook
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </>
   );
 };
